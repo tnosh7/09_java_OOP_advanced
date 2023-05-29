@@ -67,7 +67,7 @@ public class UserManager {
 	}
 	
 	
-	User getUser(int idx) {
+	User getUser(int idx) { 			////user에 있는 user배열 인덱스 비교
 		return user[idx];
 	}
 	
