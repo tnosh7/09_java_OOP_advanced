@@ -17,7 +17,7 @@ public class FileManager {	// 5번
 	String fileName = "ATM.txt";	//메뉴에는 없음 txt저장 및 로드 
 	String data = "";				//userCnt +  userList ->UserManager
 	UserManager um = UserManager.getInstance();	//ATM에서 처음 시작할때 자동 출력
-	
+	///list save하려면 setData부터 해야 함 
 	void setData() {
 		
 		data = "";

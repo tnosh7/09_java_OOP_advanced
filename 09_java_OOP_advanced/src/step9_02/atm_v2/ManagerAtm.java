@@ -16,12 +16,25 @@ public class ManagerAtm {
 			System.out.print("메뉴 선택 : ");
 			int sel = scan.nextInt();
 			
-			if (sel ==1 ) ;
-			else if (sel == 2) ;
+			if (sel ==1 ) join();
+			else if (sel == 2) login();
 			else if (sel == 0) break;
 			
 		}
 		
 	}
+	void login() { 
+		log = mu.logUser();
+		if (log == -1) ;
+		else System.out.println("[메시지] 아이디와 패스워드를 확인해주세요.");
+	}
 	
+	void join() {
+		
+	}
+	
+	void loginMenu() { 
+		
+		
+	}
 }

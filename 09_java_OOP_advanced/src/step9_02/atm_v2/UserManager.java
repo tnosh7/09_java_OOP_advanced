@@ -22,8 +22,8 @@ public class UserManager {	// 3번
 		
 		for (int i = 0; i < userCnt; i++) {
 			System.out.print((i+1) + ".ID(" + userList[i].id + ")\tPW(" + userList[i].pw + ")\t");
-			if (userList[i].accCnt != 0) {
-				for (int j = 0; j < userList[i].accCnt; j++) {
+			if (userList[i].accCnt != 0) {	//계좌있으면 계좌정보 출력
+				for (int j = 0; j < userList[i].accCnt; j++) {		
 					System.out.print("(" + userList[i].acc[j].accNumber + ":" + userList[i].acc[j].money + ")");
 				}
 			}
