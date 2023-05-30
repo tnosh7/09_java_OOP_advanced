@@ -28,7 +28,6 @@ public class Acc_풀ATM {
 	}
 	
 	void login() {
-		log = userManager.l
 		
 	}
 	void logout() { 
