@@ -5,6 +5,4 @@ public class Account {			///1번
 	String accNumber;			
 	int money;			
 	
-	String acNumber; 
-	int cash; 
 }

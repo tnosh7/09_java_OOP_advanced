@@ -7,10 +7,7 @@ public class User { // 2번 - > UserManager에서 instance 설정후 여기서 �
 	String id;											
 	String pw;											
 	
-	Account[] accs = new Account[ManagerUser.getInstance().ACC_MAX_CNT];
-	int acCnt; 
-	String ids;
-	String pws; 
+
 }
 
 
