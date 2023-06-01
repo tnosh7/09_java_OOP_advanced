@@ -46,7 +46,7 @@ public class UserManager {	// 3번
 		
 	}
 	
-	
+	//////다시 생각해보기//////!!!!!!  !
 	int logUser() {
 		
 		int identifier = -1;
@@ -56,8 +56,8 @@ public class UserManager {	// 3번
 		System.out.print("[로그인]패스워드를 입력하세요 : ");
 		String pw = scan.next();
 		
-		for (int i = 0; i < UserManager.instance.userCnt; i++) {
-			if (userList[i].id.equals(id) && userList[i].pw.equals(pw)) {
+		for (int i = 0; i < UserManager.instance.userCnt; i++) {	//인스턴스
+			if (userList[i].id.equals(id) && userList[i].pw.equals(pw)) {//생각해보기
 				identifier = i;
 			}
 		}

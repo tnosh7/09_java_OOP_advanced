@@ -52,8 +52,8 @@ public class UserManager_풀이 {	// 3번
 		System.out.print("로그인 패스워드를 입력하세요 : ");
 		String pw = scan.next();
 		
-		for (int i = 0; i < userCnt; i++) {
-			if (id.equals(userList[userCnt].id) && pw.equals(userList[userCnt].pw)) {
+		for (int i = 0; i < UserManager_풀이.instance.userCnt; i++) {
+			if (id.equals(userList[i].id) && pw.equals(userList[i].pw)) {
 				identifier = i;
 			}
 		}
@@ -111,6 +111,7 @@ public class UserManager_풀이 {	// 3번
 		userCnt++;
 		System.out.println("메시지 환영합니다.");
 		//FW 추가하기 
+		FileManager_풀이.getInstance().saveData();
 	}
 	
 	int delMember(int identifier) {
@@ -129,6 +130,7 @@ public class UserManager_풀이 {	// 3번
 		System.out.println("메시지 탈퇴되었습니다.");
 		
 		//FM 추가 
+		FileManager_풀이.getInstance().saveData();
 		return identifier;
 	}
 	

@@ -83,7 +83,7 @@ public class FileManager {	// 5번
 				fr = new FileReader(file);
 				br = new BufferedReader(fr);
 				while (true) {
-					String line = br.readLine();
+					String line = br.readLine();//
 					if (line == null) {
 						break;
 					}
@@ -103,12 +103,12 @@ public class FileManager {	// 5번
 					
 					String id = tmp[i];
 					String pw = tmp[i+1];
-					int accCnt = Integer.parseInt(tmp[i+2]);
+					int accCnt = Integer.parseInt(tmp[i+2]);//계좌수 
 					
 					um.userList[j].id = id;
 					um.userList[j].pw = pw;
 					um.userList[j].accCnt = accCnt;
-					String accInfo = tmp[i+3];
+					String accInfo = tmp[i+3];				//계좌넘버 -> 돈 
 					
 					if (accCnt == 1) {
 						String[] temp = accInfo.split("/");
@@ -138,7 +138,7 @@ public class FileManager {	// 5번
 				}
 			}
 			else {
-				//um.setDummy();
+				//um.setDummy(); 테스트용 데이터 
 				setData();
 				save();
 			}

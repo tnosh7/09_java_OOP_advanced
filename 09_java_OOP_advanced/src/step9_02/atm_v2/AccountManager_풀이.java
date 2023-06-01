@@ -59,12 +59,10 @@ public class AccountManager_풀이 {		//4번
 			return;
 		}
 		else {
-			Account temp = mu.userList[idetifier].acc[accCntbyUser];
 			
 			
 			
 		}
-		mu.userList[identifier].acc
 		
 		
 		
