@@ -70,7 +70,19 @@ public class UserManager_풀이 {	// 3번
 		}
 		return isDuple;
 	}
-	
+	boolean getCheckAcc (String account) {
+		
+		boolean isDuple = false; 
+		for (int i = 0; i < userCnt; i++) {
+			for (int j = 0; j < userList[i].accCnt; j++) {
+				if (account.equals(userList[i].acc[j].accNumber)) {
+					isDuple = true;
+				}
+			}
+		}
+		return isDuple;
+		
+	}
 	void joinMember() { 
 		System.out.println("회원가입 아이디를 입력하세요 : ");
 		String id = scan.next();
@@ -119,5 +131,7 @@ public class UserManager_풀이 {	// 3번
 		//FM 추가 
 		return identifier;
 	}
+	
+	
 	
 }
