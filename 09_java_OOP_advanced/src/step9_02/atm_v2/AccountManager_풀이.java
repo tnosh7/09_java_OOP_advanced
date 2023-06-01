@@ -49,5 +49,24 @@ public class AccountManager_풀이 {		//4번
 		}
 		System.out.println("\n========================\n");
 	}
+	
+	void delAcc(int identifier) {
+		
+		int accCntbyUser = mu.userList[identifier].accCnt;
+		
+		if (accCntbyUser < 0) {
+			System.out.println("메시지 계좌개설 후에 이용해주세요");
+			return;
+		}
+		else {
+			Account temp = mu.userList[idetifier].acc[accCntbyUser];
 			
+			
+			
+		}
+		mu.userList[identifier].acc
+		
+		
+		
+	}
 }

@@ -11,7 +11,7 @@ public class FileManager_풀이 {	// 5번
 	
 	private FileManager_풀이(){}
 	private static FileManager_풀이 instance = new FileManager_풀이();
-	public FileManager_풀이 getInstance() {
+	public static FileManager_풀이 getInstance() {
 		return instance;
 	}
 	
