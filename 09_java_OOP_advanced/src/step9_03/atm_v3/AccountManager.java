@@ -66,7 +66,7 @@ public class AccountManager {
 		
 	}
 	
-	
+	//입금 계좌 
 	void income() {
 		
 		int loginAccIndex = showAccList("입금");

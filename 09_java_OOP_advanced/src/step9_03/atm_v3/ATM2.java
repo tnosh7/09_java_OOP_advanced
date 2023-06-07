@@ -11,11 +11,45 @@ public class ATM2 {
 		
 		boolean isLoad = FileManager2.getInstance().loadData();
 		if (!isLoad) {
-			UserManager2.getInstance()
+			UserManager2.getInstance().setDummy();
+			FileManager2.getInstance().saveData();
 		}
 		
 	}
 	
+	void showMenu() {
+		
+		while(true) {
+			
+			printAllDataByAllUser();
+			
+			System.out.println("[MAGA ATM]");
+			System.out.println("[1]회원가입\n[2]로그인\n[0]종료");
+			System.out.print("메뉴를 선택하세요 : ");
+			int choice = scan.nextInt();
+			
+			if (choice == 1) {
+				join();
+			}
+			else if (choice == 2) {
+				login();
+			}
+			else if (choice == 0) {
+				break;
+			}
+		}
+		
+	}
+	void printAllDataByAllUser() { 
+		UserManager.getInstance().printAllUserInfo();
+	}
+	
+	void login() { 
+		UserManager.getInstance().loginUser();
+	}
+	void join() { 
+		UserManager.getInstance().joinUser();
+	}
 	
 	
 	

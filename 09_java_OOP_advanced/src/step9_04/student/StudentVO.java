@@ -11,7 +11,7 @@ public class StudentVO {
 		this.num = num;
 		this.name = name;
 	}	
-	
+	//[4]출력
 	public void printOneInfo() {
 		System.out.println("id: " + this.id + " / num: " + this.num + " / name: " + this.name);
 	}

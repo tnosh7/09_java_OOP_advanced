@@ -1,6 +1,6 @@
 package step9_04.student;
 public class StudentInsert {
-	//아이디 체크 
+	//[1]아이디 추가할 때 아이디중복 체크 클래스 
 	private StudentDAO studentDAO;
 	
 	public StudentInsert(StudentDAO stDAO) {

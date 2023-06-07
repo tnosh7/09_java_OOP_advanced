@@ -21,6 +21,51 @@ public class UserManager2 {
 		System.out.println();
 	}
 	
+	void setDummy() {
+		
+		userCount = 5; 
+		userList = new User[userCount];
+		for (int i = 0; i < userCount; i++) {
+			userList[i] = new User();
+		}
+		String[] a = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"};
+		String[] b = {"l", "b", "c", "m", "e", "f", "g", "n", "i", "p", "k"};
+		String[] c = {"s", "t", "u", "w", "v", "o", "x", "n", "q", "p", "r"};
+		
+		for (int i = 0; i < userCount; i++) {
+			String id = "";
+			int rNum = ATM.ran.nextInt(a.length);
+			id += a[rNum];
+			rNum = ATM.ran.nextInt(b.length);
+			id += b[rNum];
+			rNum = ATM.ran.nextInt(c.length);
+			id += c[rNum];
+			
+			userList[i].id = id;
+		}
+		
+		String[] d = {"1", "8", "9", "4"};
+		String[] e = {"2", "7", "0", "6"};
+		String[] f = {"5", "3", "2", "7"};
+		
+		for (int i = 0; i < userCount; i++) {
+			String pw = "";
+			int rNum = ATM.ran.nextInt(d.length);
+			pw += d[rNum];
+			rNum = ATM.ran.nextInt(e.length);
+			pw += e[rNum];
+			rNum = ATM.ran.nextInt(f.length);
+			pw += f[rNum];
+			
+			userList[i].password = pw;
+		}
+		
+		System.out.println("[메시지] 더미 파일을 추가했습니다.");
+		
+		
+	}
+	
+	
 	void joinUser() { 
 		System.out.print("[가입] 아이디를 입력해주세요 : ");
 		String id = ATM.scan.next();

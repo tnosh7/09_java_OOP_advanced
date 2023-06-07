@@ -35,7 +35,7 @@ public class UserManager {
 		String[] a = {"a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k"};
 		String[] b = {"l", "b", "c", "m", "e", "f", "g", "n", "i", "p", "k"};
 		String[] c = {"s", "t", "u", "w", "v", "o", "x", "n", "q", "p", "r"};
-		
+		//랜덤 아이디만들기 
 		for (int i = 0; i < userCount; i++) {
 			String id = "";
 			int rNum = ATM.ran.nextInt(a.length);
@@ -51,7 +51,7 @@ public class UserManager {
 		String[] d = {"1", "8", "9", "4"};
 		String[] e = {"2", "7", "0", "6"};
 		String[] f = {"5", "3", "2", "7"};
-		
+		//랜덤 pw 만들기 
 		for (int i = 0; i < userCount; i++) {
 			String pw = "";
 			int rNum = ATM.ran.nextInt(d.length);

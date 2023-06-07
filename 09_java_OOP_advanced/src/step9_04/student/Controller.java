@@ -13,7 +13,7 @@ public class Controller {
 		select = new StudentSelect(stDAO);
 		selectAll = new StudentSelectAll(stDAO);
 	}
-	
+	// 입력은 DAO
 	public StudentDAO getStDAO() {
 		return stDAO;
 	}
@@ -21,7 +21,7 @@ public class Controller {
 	public void setStDAO(StudentDAO stDAO) {
 		this.stDAO = stDAO;
 	}
-	
+	// [1]추가
 	public StudentInsert getInsert() {
 		return insert;
 	}
@@ -29,7 +29,7 @@ public class Controller {
 	public void setInsert(StudentInsert insert) {
 		this.insert = insert;
 	}
-	
+	//[4]출력 - 아이디 선택 
 	public StudentSelect getSelect() {
 		return select;
 	}
@@ -37,7 +37,7 @@ public class Controller {
 	public void setSelect(StudentSelect select) {
 		this.select = select;
 	}
-	
+	//[5]전체 출력 
 	public StudentSelectAll getSelectAll() {
 		return selectAll;
 	}

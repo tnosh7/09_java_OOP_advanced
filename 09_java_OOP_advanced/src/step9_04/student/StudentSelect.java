@@ -8,7 +8,7 @@ public class StudentSelect {
 		studentDAO = stDAO;
 	}
 	
-	
+	//[4]출력 때 아이디 체크하는 클래스 
 	public StudentVO select(String id) {
 		
 		if (checkId(id)) {

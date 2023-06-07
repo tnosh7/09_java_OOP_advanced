@@ -1,7 +1,7 @@
 package step9_04.student;
 
 import java.util.Map;
-
+//[5]전체 출력을 눌렀을 때 전체 출력하는 클래스 
 public class StudentSelectAll {
 	
 	private StudentDAO studentDAO;
