@@ -168,13 +168,27 @@ public class UserManager2 {
 			if (choice == 1) {
 				AccountManager.getInstance().createAccount();
 			}
-			else if (choice == 2) {}
-			else if (choice == 3) {}
-			else if (choice == 4) {}
-			else if (choice == 5) {}
-			else if (choice == 6) {}
-			else if (choice == 7) {}
+			else if (choice == 2) {
+				AccountManager2.getInstance().income();
+			}
+			else if (choice == 3) {
+				AccountManager2.getInstance().outcome();
+			}
+			else if (choice == 4) {
+				AccountManager2.getInstance().transfer();
+			}
+			else if (choice == 5) {
+				AccountManager2.getInstance().lookupAcc();
+			}
+			else if (choice == 6) {
+				AccountManager2.getInstance().deleteAcc();
+			}
+			else if (choice == 7) {
+				leaveUser();
+				break;
+			}
 			else if (choice == 0) {
+				loginUser();
 				break;
 			}
 			

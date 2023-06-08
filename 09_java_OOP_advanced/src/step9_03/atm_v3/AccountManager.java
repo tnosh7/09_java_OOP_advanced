@@ -114,8 +114,8 @@ public class AccountManager {
 		
 		int check = -1;
 		for (int i = 0; i < userManager.userList.length; i++) {
-			if (userManager.userList[i].accList != null) {
-				for (int j = 0; j < userManager.userList[i].accCount; j++) {
+			if (userManager.userList[i].accList != null) {		// null이아니라면. 
+				for (int j = 0; j < userManager.userList[i].accCount; j++) { //count를 이용해서 오류 나지 않게! 
 					if (transAccount.equals(userManager.userList[i].accList[j].number)) {
 						check = i;
 					}
@@ -142,7 +142,8 @@ public class AccountManager {
 		
 	}
 	
-	
+	//계좌이체하려면 -1.이체할 계좌확인, 이체할 계좌의 index확인, 
+	//2. 계좌확인 후 금액이 적으면 확인메시지, 금액이 많으면 이체계좌에 +, 내계좌에서 -해줌  
 	void transfer() {
 		
 		int loginAccIndex = showAccList("이체");
@@ -178,8 +179,8 @@ public class AccountManager {
 		
 	}
 	
-	
-	void lookupAcc() {
+	//[5].계좌조회
+	void lookupAcc() { 
 		userManager.userList[userManager.identifier].printOneUserAllAccounts();
 	}
 
