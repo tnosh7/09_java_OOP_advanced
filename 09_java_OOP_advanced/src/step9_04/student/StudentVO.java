@@ -5,7 +5,7 @@ public class StudentVO {
 	private String id;
 	private int num;
 	private String name;
-	//학생데이터
+	//학생데이터 getter setter 이용 
 	public StudentVO(String id , int num , String name) {
 		this.id = id;
 		this.num = num;

@@ -1,7 +1,7 @@
 package step9_04.student;
 
 import java.util.Map;
-
+//VO -> DAO -> Controller
 public class StudentDAO {
 	//[1]학생 아이디 추가
 	public void insert(StudentVO st) {

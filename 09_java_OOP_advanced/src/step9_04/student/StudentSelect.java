@@ -1,7 +1,7 @@
 package step9_04.student;
 
 public class StudentSelect {
-	//아이디 체크,
+	//[4]자신의 아이디와 정보만 출력하는 클래스
 	private StudentDAO studentDAO;
 	
 	public StudentSelect(StudentDAO stDAO) {
