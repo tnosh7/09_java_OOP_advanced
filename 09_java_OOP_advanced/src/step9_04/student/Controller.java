@@ -2,7 +2,7 @@ package step9_04.student;
 
 public class Controller {
 	
-	private StudentDAO stDAO; 			//StudentDAO에 저장된 데이터 - 클래스 호출 --> DAO는 학생Repository클래스의 데이터를 참조한다. 
+	private StudentDAO stDAO; 			//StudentDAO에 저장된 데이터 - 클래스 호출 --> DAO는 VO 데이터를 참조한다. 
 	private StudentInsert insert;
 	private StudentSelect select;	
 	private StudentSelectAll selectAll;
