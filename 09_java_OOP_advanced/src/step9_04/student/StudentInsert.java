@@ -18,7 +18,7 @@ public class StudentInsert {
 		}
 	}
 	
-	
+	// 3차 방정식 ???? 뭐징/
 	public boolean checkId(String id) {
 		StudentVO studentVO = studentDAO.select(id);
 		return studentVO == null? true:false;
