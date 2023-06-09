@@ -1,15 +1,15 @@
 package step9_01.atm_v1;
 
-public class Acc_풀User {
-	
-	String id; 
+public class Prac {
+
+	String id;
 	int accCnt; 
-	Acc_풀[]acc; 
+	Prac2[]acc = null;
 	
-	void printAccount() { 
+	void printAllCount() {
+		
 		for (int i = 0; i < accCnt; i++) {
 			acc[i].printOwnAccount();
 		}
 	}
 }
-	
