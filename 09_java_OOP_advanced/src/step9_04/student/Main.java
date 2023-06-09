@@ -25,6 +25,7 @@ public class Main {
 				String name = scan.next();
 				//컨트롤러-> studentInsert(확인) -> VO에 저장 -> VO는 DB에 저장 
 				StudentInsert stInsert = controller.getInsert();
+				//main-DAO-insert Checkid-insert
 				stInsert.insert(new StudentVO(id , num , name));
 				
 			}

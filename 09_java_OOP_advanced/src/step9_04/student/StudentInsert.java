@@ -3,7 +3,7 @@ public class StudentInsert {
 	//[1]아이디 추가할 때 아이디중복 체크 클래스 
 	private StudentDAO studentDAO;
 	
-	//클래스..?
+	//생성자를 이용
 	public StudentInsert(StudentDAO stDAO) {
 		this.studentDAO = stDAO;
 	}	
@@ -18,7 +18,7 @@ public class StudentInsert {
 		}
 	}
 	
-	// 3차 방정식 ???? 뭐징/
+	// ? 참 : 거짓 
 	public boolean checkId(String id) {
 		StudentVO studentVO = studentDAO.select(id);
 		return studentVO == null? true:false;
