@@ -1,4 +1,4 @@
-package step9_01.atm_v1;
+ package step9_01.atm_v1;
 
 public class Account {		//계좌 넘버,돈 
 														
